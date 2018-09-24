@@ -11,6 +11,7 @@ import {
   Dimensions,
   Picker,
 } from 'react-native';
+import { green } from 'ansi-colors';
 
 var screen = Dimensions.get('window');
 export default class App extends React.Component {
@@ -105,137 +106,20 @@ export default class App extends React.Component {
 
           </View>
           <View>
-            <TouchableOpacity style={styles.circle} onPress={this._onPressPlus}>
+            <View style={styles.circle} >
               <Text style={styles.text5}>Fajr</Text>
               <Text style={styles.text4}>4:50 AM</Text>
               <Text style={styles.text5}>-4:50:32</Text>
-            </TouchableOpacity>
-          </View>
+            </View>
+            <View style={styles.circle2} >
 
+            </View>
+          </View>
 
         </View>
         <ScrollView
-          style={{
-            marginHorizontal: 5,
-            marginTop: 20,
-          }}
+          style={styles.scrollView}
         >
-          <View
-            style={styles.view4}>
-            <Image
-              source={require('./src/icons/customer.png')}
-              style={{
-                width: 50,
-                height: 50,
-                resizeMode: 'contain'
-              }} />
-            <View
-              style={{
-                justifyContent: 'space-between',
-                flexDirection: 'row',
-                alignItems: 'center',
-                backgroundColor: "white",
-              }}
-            >
-              <View
-                style={{
-                  justifyContent: 'flex-end',
-                  flexDirection: 'column',
-                  marginHorizontal: 10,
-                  marginVertical: 5
-                }}>
-                <Text style={[styles.subTextModal,]}>Prayer</Text>
-                <Text style={[styles.subTextModal, { color: 'rgba(145,145,145,1)', fontSize: 10, }]}>Learn how to pray</Text>
-              </View>
-            </View>
-          </View>
-          <View
-            style={styles.view4}>
-            <Image
-              source={require('./src/icons/customer.png')}
-              style={{
-                width: 50,
-                height: 50,
-                resizeMode: 'contain'
-              }} />
-            <View
-              style={{
-                justifyContent: 'space-between',
-                flexDirection: 'row',
-                alignItems: 'center',
-                backgroundColor: "white",
-              }}
-            >
-              <View
-                style={{
-                  justifyContent: 'flex-end',
-                  flexDirection: 'column',
-                  marginHorizontal: 10,
-                  marginVertical: 5
-                }}>
-                <Text style={[styles.subTextModal,]}>Prayer</Text>
-                <Text style={[styles.subTextModal, { color: 'rgba(145,145,145,1)', fontSize: 10, }]}>Learn how to pray</Text>
-              </View>
-            </View>
-          </View>
-          <View
-            style={styles.view4}>
-            <Image
-              source={require('./src/icons/customer.png')}
-              style={{
-                width: 50,
-                height: 50,
-                resizeMode: 'contain'
-              }} />
-            <View
-              style={{
-                justifyContent: 'space-between',
-                flexDirection: 'row',
-                alignItems: 'center',
-                backgroundColor: "white",
-              }}
-            >
-              <View
-                style={{
-                  justifyContent: 'flex-end',
-                  flexDirection: 'column',
-                  marginHorizontal: 10,
-                  marginVertical: 5
-                }}>
-                <Text style={[styles.subTextModal,]}>Prayer</Text>
-                <Text style={[styles.subTextModal, { color: 'rgba(145,145,145,1)', fontSize: 10, }]}>Learn how to pray</Text>
-              </View>
-            </View>
-          </View>
-          <View
-            style={styles.view4}>
-            <Image
-              source={require('./src/icons/customer.png')}
-              style={{
-                width: 50,
-                height: 50,
-                resizeMode: 'contain'
-              }} />
-            <View
-              style={{
-                justifyContent: 'space-between',
-                flexDirection: 'row',
-                alignItems: 'center',
-                backgroundColor: "white",
-              }}
-            >
-              <View
-                style={{
-                  justifyContent: 'flex-end',
-                  flexDirection: 'column',
-                  marginHorizontal: 10,
-                  marginVertical: 5
-                }}>
-                <Text style={[styles.subTextModal,]}>Prayer</Text>
-                <Text style={[styles.subTextModal, { color: 'rgba(145,145,145,1)', fontSize: 10, }]}>Learn how to pray</Text>
-              </View>
-            </View>
-          </View>
           <View
             style={styles.view4}>
             <Image
